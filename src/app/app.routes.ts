@@ -14,7 +14,7 @@ export const routes: Routes = [
         pathMatch: 'full',
       },
       {
-        path: 'dashboard',
+        path: '',
         loadComponent: () =>
           import('./views/resumedashboard/resumedashboard.component').then(
             (m) => m.ResumedashboardComponent
