@@ -1,1 +1,45 @@
-<p>resumepreview works!</p>
+<div class="container py-5 bg-white text-dark rounded shadow-sm resume-preview">
+
+    <!-- Header -->
+    <div class="text-center mb-4">
+        <h1 class="fw-bold">{{ resumeData.name }}</h1>
+        <h5 class="text-secondary">{{ resumeData.title }}</h5>
+        <p>{{ resumeData.email }} | {{ resumeData.phone }}</p>
+    </div>
+
+    <!-- Summary -->
+    <div class="mb-4">
+        <h5 class="fw-bold border-bottom pb-1">Summary</h5>
+        <p>{{ resumeData.summary }}</p>
+    </div>
+
+    <div class="row">
+        <!-- Left column: Skills -->
+        <div class="col-md-4 mb-4">
+            <h5 class="fw-bold border-bottom pb-1">Skills</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let skill of resumeData.skills">{{ skill }}</li>
+            </ul>
+        </div>
+
+        <!-- Right column: Experience and Education -->
+        <div class="col-md-8">
+            <div class="mb-4">
+                <h5 class="fw-bold border-bottom pb-1">Experience</h5>
+                <div *ngFor="let exp of resumeData.experiences" class="mb-3">
+                    <h6 class="mb-0">{{ exp.role }} - {{ exp.company }}</h6>
+                    <small class="text-secondary">{{ exp.start }} - {{ exp.end }}</small>
+                    <p class="mb-0">{{ exp.description }}</p>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="fw-bold border-bottom pb-1">Education</h5>
+                <div *ngFor="let edu of resumeData.education" class="mb-3">
+                    <h6 class="mb-0">{{ edu.degree }} - {{ edu.school }}</h6>
+                    <small class="text-secondary">{{ edu.start }} - {{ edu.end }}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
