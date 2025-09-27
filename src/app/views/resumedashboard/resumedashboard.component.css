@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    background-color: #1f2937;
+    /* Tailwind gray-900 */
+    min-height: 100vh;
+    color: white;
+}
+
+.template-card {
+    background: linear-gradient(to bottom right, #1f2937, #111827);
+    border: 1px solid #374151;
+    transition: border 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.template-card:hover {
+    border-color: #3b82f6;
+    transform: translateY(-4px);
+}
+
+.progress-bar {
+    transition: width 0.3s;
+}
