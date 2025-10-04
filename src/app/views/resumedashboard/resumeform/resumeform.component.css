@@ -1,0 +1,78 @@
+body {
+    background: #222;
+    color: #fff;
+}
+
+:host {
+    display: block;
+    background-color: #1f2937;
+    /* Tailwind gray-900 */
+    min-height: 100vh;
+    color: white;
+}
+
+.resume-section {
+    background: #222;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #048fa7;
+    padding: 15px 16px;
+}
+
+.resume-section h5 {
+    background: #19bbc7;
+    color: #fff;
+    padding: 9px 12px;
+    border-radius: 6px 6px 0 0;
+    font-size: 1.05rem;
+    margin: -16px -16px 16px -16px;
+}
+
+.resume-field {
+    background: #131313;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: #fff;
+    border: none;
+}
+
+.side-actions .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.side-actions .btn-warning {
+    color: #fff;
+    font-weight: bold;
+}
+
+.progress {
+    height: 18px;
+    margin-bottom: 0;
+    border-radius: 8px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-link {
+    color: #048fa7 !important;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    background: #19bbc7 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+}
+
+::placeholder {
+    color: #ccc !important;
+}
+
+label {
+    font-weight: 500;
+    color: #abdbe3;
+}

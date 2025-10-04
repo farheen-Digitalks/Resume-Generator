@@ -1,1 +1,94 @@
-<p>resumeform works!</p>
+<div class="container-fluid p-3">
+    <!-- <div class="row mb-2 align-items-center">
+        <div class="col">
+            <h4 class="fw-bold text-info"><i class="bi bi-file-earmark-text"></i> Resume Template Generator</h4>
+        </div>
+        <div class="col text-end">
+            <div class="d-flex align-items-center justify-content-end">
+                <span class="fw-bold me-2">Progress:</span>
+                <div class="progress w-50 me-2">
+                    <div class="progress-bar bg-info" style="width: 0%"></div>
+                </div>
+                <span>0%</span>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <!-- Main Resume Form -->
+        <div class="col-lg-8">
+            <div class="resume-section">
+                <h5><i class="bi bi-person-lines-fill"></i> Personal Information</h5>
+                <form>
+                    <div class="row mb-2">
+                        <div class="col-lg-6 mb-2">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control resume-field" placeholder="Enter Full Name">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label>Professional Title</label>
+                            <input type="text" class="form-control resume-field" placeholder="e.g. Web Developer">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label>Email</label>
+                            <input type="email" class="form-control resume-field" placeholder="Email">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label>Phone</label>
+                            <input type="text" class="form-control resume-field" placeholder="Phone Number">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label>Address</label>
+                            <input type="text" class="form-control resume-field" placeholder="Address">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label>LinkedIn</label>
+                            <input type="text" class="form-control resume-field" placeholder="LinkedIn Profile">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label>Website</label>
+                            <input type="text" class="form-control resume-field" placeholder="Website">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="resume-section">
+                <h5><i class="bi bi-chat-square-text"></i> Professional Summary</h5>
+                <textarea class="form-control resume-field" rows="2"
+                    placeholder="Type a short summary of your profile"></textarea>
+            </div>
+
+            <div class="resume-section">
+                <h5><i class="bi bi-briefcase"></i> Work Experience</h5>
+                <button type="button" class="btn btn-info mb-2"><i class="bi bi-plus"></i> Add Job</button>
+                <!-- Jobs will go here... -->
+            </div>
+
+            <div class="resume-section">
+                <h5><i class="bi bi-mortarboard"></i> Education</h5>
+                <button type="button" class="btn btn-info mb-2"><i class="bi bi-plus"></i> Add Education</button>
+            </div>
+
+            <div class="resume-section">
+                <h5><i class="bi bi-tools"></i> Skills</h5>
+                <input type="text" class="form-control resume-field mb-2" placeholder="List your skills">
+            </div>
+
+            <div class="resume-section">
+                <h5><i class="bi bi-translate"></i> Languages</h5>
+                <button type="button" class="btn btn-info"><i class="bi bi-plus"></i> Add Language</button>
+            </div>
+        </div>
+
+        <!-- Sidebar Actions -->
+        <div class="col-lg-4">
+            <div class="resume-section side-actions mb-4">
+                <h5>Quick Actions</h5>
+                <button class="btn btn-info mb-2"><i class="bi bi-save2"></i> Save Resume</button>
+                <button class="btn btn-info"><i class="bi bi-download"></i> Load Sample</button>
+                <button class="btn btn-warning"><i class="bi bi-arrow-counterclockwise"></i> Reset Form</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,11 @@
+:host {
+    display: block;
+    background-color: #1f2937;
+    /* Tailwind gray-900 */
+    min-height: 100vh;
+    color: white;
+}
+
 .resume-preview {
     font-family: 'Arial', sans-serif;
     max-width: 900px;

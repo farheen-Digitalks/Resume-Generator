@@ -27,6 +27,13 @@ export const routes: Routes = [
             './views/resumedashboard/resumepreview/resumepreview.component'
           ).then((m) => m.ResumepreviewComponent),
       },
+      {
+        path: 'edit',
+        loadComponent: () =>
+          import(
+            './views/resumedashboard/resumeform/resumeform.component'
+          ).then((m) => m.ResumeformComponent),
+      },
     ],
   },
 ];

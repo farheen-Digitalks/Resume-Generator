@@ -14,7 +14,7 @@ interface Template {
   styleUrl: './resumedashboard.component.css',
 })
 export class ResumedashboardComponent {
-  progress = 0;
+  // progress = 0;
   activeTab: 'templates' | 'edit' | 'themes' | 'preview' = 'templates';
 
   templates: Template[] = [
@@ -25,7 +25,7 @@ export class ResumedashboardComponent {
 
   selectTemplate(template: Template) {
     console.log('Selected template:', template);
-    this.progress = 25; // example progress
+    // this.progress = 25; // example progress
   }
 
   setTab(tab: 'templates' | 'edit' | 'themes' | 'preview') {
