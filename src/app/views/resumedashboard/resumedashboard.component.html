@@ -1,8 +1,7 @@
-<div class="py-5 text-white">
-
-    <!-- Header -->
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1 class="h2 fw-bold">Resume Template Generator</h1>
+<div class="py-2 text-white">
+    
+    <div class="d-flex justify-content-between">
+        <h2 class="h4 fw-semibold mb-3">Choose Your Resume Template</h2>
         <div class="d-flex align-items-center gap-2">
             <span>Progress:</span>
             <div class="progress" style="width: 200px; height: 8px;">
@@ -13,25 +12,6 @@
             <span>{{progress}}%</span>
         </div>
     </div>
-
-    <!-- Tabs -->
-    <ul class="nav nav-tabs mb-4">
-        <li class="nav-item">
-            <a class="nav-link" [class.active]="activeTab==='templates'" (click)="setTab('templates')">Templates</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" [class.active]="activeTab==='edit'" (click)="setTab('edit')">Edit Resume</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" [class.active]="activeTab==='themes'" (click)="setTab('themes')">Color Themes</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" [class.active]="activeTab==='preview'" (click)="setTab('preview')">Preview</a>
-        </li>
-    </ul>
-
-    <!-- Templates Grid -->
-    <h2 class="h4 fw-semibold mb-3">Choose Your Resume Template</h2>
     <div class="row g-3">
         <div class="col-md-4" *ngFor="let template of templates">
             <div class="template-card p-4 text-center rounded" (click)="selectTemplate(template)">

@@ -20,6 +20,13 @@ export const routes: Routes = [
             (m) => m.ResumedashboardComponent
           ),
       },
+      {
+        path: 'preview',
+        loadComponent: () =>
+          import(
+            './views/resumedashboard/resumepreview/resumepreview.component'
+          ).then((m) => m.ResumepreviewComponent),
+      },
     ],
   },
 ];

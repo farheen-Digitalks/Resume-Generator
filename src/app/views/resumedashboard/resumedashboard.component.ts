@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 interface Template {
   icon: string;
   name: string;
@@ -8,7 +9,7 @@ interface Template {
 
 @Component({
   selector: 'app-resumedashboard',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './resumedashboard.component.html',
   styleUrl: './resumedashboard.component.css',
 })
