@@ -1,40 +1,65 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h1 class="h2 fw-bold">Resume Template Generator</h1>
-        </div>
-        <div class="d-flex">
-            <a class="navbar-brand" href="#">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" [class.active]="activeTab==='edit'" [routerLink]="['/edit']">Edit Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" [class.active]="activeTab==='themes'">Color Themes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" [class.active]="activeTab==='preview'" [routerLink]="['/preview']">Preview</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
 <div class="d-flex justify-content-between">
+  <!-- Header -->
+  <div class="d-flex">
+    <h1 class="h2 fw-bold">Resume Template Generator</h1>
+  </div>
+  <div class="d-flex">
     <div></div>
     <div class="d-flex align-items-center gap-2">
-        <span>Progress:</span>
-        <div class="progress" style="width: 200px; height: 8px;">
-            <div class="progress-bar bg-primary" role="progressbar" [style.width.%]="progress"
-                [attr.aria-valuenow]="progress" aria-valuemin="0" aria-valuemax="100">
-            </div>
-        </div>
-        <span>{{progress}}%</span>
+      <span>Progress:</span>
+      <div class="progress" style="width: 200px; height: 10px">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          [style.width.%]="progress"
+          [attr.aria-valuenow]="progress"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <span>{{ progress }}%</span>
     </div>
+  </div>
 </div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="d-flex">
+    <a class="navbar-brand" href="#">Templates</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [class.active]="activeTab === 'edit'"
+            [routerLink]="['/edit']"
+            >Edit Resume</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="activeTab === 'themes'"
+            >Color Themes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [class.active]="activeTab === 'preview'"
+            [routerLink]="['/preview']"
+            >Preview</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
